@@ -19,7 +19,6 @@ Long localDateTimeStringToEpochMili(String sendAt, String format){
     return dateTime.toInstant(OffsetDateTime.now().getOffset()).toEpochMilli()
 }
 
-
 final String INCOMING_TIMESTAMP_FORMAT = 'yyyy.MM.dd HH:mm'
 
 println localDateTimeStringToEpochMili("2021.03.22 13:15", INCOMING_TIMESTAMP_FORMAT)
