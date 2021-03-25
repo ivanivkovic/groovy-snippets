@@ -1,4 +1,4 @@
-package ib.pojo
+package my.pojo
 
 import groovy.transform.Canonical
 

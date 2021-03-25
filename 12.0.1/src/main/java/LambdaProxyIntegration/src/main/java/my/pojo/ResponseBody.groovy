@@ -1,6 +1,6 @@
-package ib.pojo
+package my.pojo
 
-class LambdaResponseBody {
+class ResponseBody {
 
     private Integer status
     private String message

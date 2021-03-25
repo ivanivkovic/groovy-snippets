@@ -1,7 +1,6 @@
+package my.function
 
-package ib.function
-
-import ib.pojo.*
+import my.pojo.*
 
 import com.amazonaws.services.lambda.runtime.Context
 import com.amazonaws.services.lambda.runtime.LambdaLogger
@@ -13,10 +12,6 @@ import com.google.gson.GsonBuilder
 class MyLambdaFunction implements RequestHandler<LambdaProxyRequest, LambdaProxyResponse> {
 
     private LambdaLogger logger
-
-    private static final DATE_FORMAT = "dd/MM"
-    private static final BUCKET_NAME = "ib.s3.cloudtarget"
-    private static final DYNAMO_TABLE = "cloudtarget"
 
     private Gson gson = new GsonBuilder().setPrettyPrinting().create()
 
@@ -41,9 +36,9 @@ class MyLambdaFunction implements RequestHandler<LambdaProxyRequest, LambdaProxy
         ResponseBody responseBody
 
         try{
-            /**
-             * Your code here
-             */
+			/**
+			 * My code here
+			 */
         }
         catch(Exception e){
             logger.log("Error in requestHandler method: ${e}")
